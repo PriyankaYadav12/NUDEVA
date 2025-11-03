@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: #f8f5f0;
+  color: #2c2a27;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #2c2a27;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #d8c0a6;
+  color: #2c2a27;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #c9ad8e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 5%;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shop, .story, .lookbook {
+  padding: 2rem 5%;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.story img {
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f0ebe7;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.div {
+  background-image: url('D/NUDEVA/images/model1.jpg');  
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
