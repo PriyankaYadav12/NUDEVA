@@ -1,0 +1,16 @@
+# ----------------------------------------------------
+# CODEOWNERS RULES
+# ----------------------------------------------------
+
+# Catch-all: By default, you own everything in the repo
+*       @PriyankaYadav12
+
+# Protect web frontend assets specifically
+*.html  @PriyankaYadav12
+*.js    @PriyankaYadav12
+*.css   @PriyankaYadav12
+
+# Protect sensitive deployment or server configurations
+/config/ @PriyankaYadav12
+.env*    @PriyankaYadav12
+
