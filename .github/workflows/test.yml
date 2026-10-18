@@ -1,17 +1,19 @@
-name: Application Test
+name: Build Application
 
 on:
-  pull_request:
-    branches:
-      - main
+  push:
+    branches: [main]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: self-hosted
 
     steps:
-      - name: Checkout code
+      - name: Checkout source code
         uses: actions/checkout@v4
 
-      - name: Test Python code
-        run: python -m py_compile app.py
+      - name: Check Docker
+        run: docker --version
+
+      - name: Build Docker image
+        run: docker build -t myapp:latest .
